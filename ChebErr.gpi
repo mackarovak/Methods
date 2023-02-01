@@ -1,0 +1,10 @@
+#! /usr/bin/gnuplot -persist
+set xlabel "X"
+set ylabel "Y"
+set grid
+set yrange [0:0.0007]
+set xrange[0:2]
+set terminal jpeg size 640,480
+set output "MistakeCheb.jpg"
+set title "Гpафик погрешности по узлам Чебышева" font "Helvetica Bold, 20"
+plot "Cheb.txt" title "err" with lines

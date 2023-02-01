@@ -1,0 +1,10 @@
+#! /usr/bin/gnuplot -persist
+set xlabel "X"
+set ylabel "Y"
+set grid
+set yrange [0:0.2]
+set xrange[5:40]
+set terminal jpeg size 640,480
+set output "Maxim.jpg"
+set title "Гpафик максимальной погрешности" font "Helvetica Bold, 20"
+plot "Maxim.txt" title "err" with lines

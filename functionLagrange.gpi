@@ -1,0 +1,10 @@
+#! /usr/bin/gnuplot -persist
+set xlabel "X" 
+set ylabel "Y"
+set grid
+set yrange [0:1]
+set xrange [0:2]
+set terminal jpeg size 640,480
+set output "Lagrange.jpg"
+set title "Интерполяционный полином Лагранжа" font "Helvetica Bold, 20"
+plot "Lagrange.txt" linetype -1 title "Ln(x)" with lines
